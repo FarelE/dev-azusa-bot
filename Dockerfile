@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "start", "pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5"]
+CMD ["npm", "start"]
