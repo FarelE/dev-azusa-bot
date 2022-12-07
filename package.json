@@ -5,7 +5,7 @@
   "main": "zeeone.js",
   "license": "MIT",
   "scripts": {
-    "start": "pm2 start zeeone.js && pm2 save && pm2 logs",
+    "start": "pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5 && pm2 start zeeone.js && pm2 save && pm2 logs",
     "dev-one": "npm start zeeone.js",
     "dev": "pm2 start zeeone.js && pm2 save && pm2 logs"
   },
