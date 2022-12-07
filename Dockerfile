@@ -14,8 +14,6 @@ RUN npm install && npm install pm2 -g
 
 COPY . .
 
-RUN pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5
-
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["npm", "start", "pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5"]
