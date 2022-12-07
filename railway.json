@@ -5,7 +5,7 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "npm run dev",
+    "startCommand": "pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5 && npm run dev",
     "restartPolicyType": "ALWAYS"
   }
 }
