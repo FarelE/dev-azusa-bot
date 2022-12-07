@@ -1,4 +1,4 @@
-FROM node:lts-buster
+FROM pm2-runtime
 
 RUN apt-get update && \
   apt-get install -y \
@@ -10,10 +10,13 @@ RUN apt-get update && \
 
 COPY package*.json .
 
-RUN npm install && npm install pm2 -g && pm2 link vvcfc5uo4rmgbli r8r13h1sg89nrm5
+RUN npm install && npm install pm2 -g
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+ENV PM2_PUBLIC_KEY r8r13h1sg89nrm5
+ENV PM2_SECRET_KEY vvcfc5uo4rmgbli
+
+CMD ["pm2-runtime", "start"]
