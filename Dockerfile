@@ -1,4 +1,4 @@
-FROM pm2-runtime
+FROM node:pm2-runtime
 
 RUN apt-get update && \
   apt-get install -y \
@@ -19,4 +19,4 @@ EXPOSE 5000
 ENV PM2_PUBLIC_KEY r8r13h1sg89nrm5
 ENV PM2_SECRET_KEY vvcfc5uo4rmgbli
 
-CMD ["pm2-runtime", "start"]
+CMD ["pm2-runtime", "zeeone.js"]
