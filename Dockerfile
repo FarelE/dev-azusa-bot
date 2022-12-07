@@ -1,4 +1,4 @@
-FROM node:pm2-runtime
+FROM pm2-runtime
 
 RUN apt-get update && \
   apt-get install -y \
