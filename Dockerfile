@@ -1,4 +1,4 @@
-FROM pm2-runtime
+FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
